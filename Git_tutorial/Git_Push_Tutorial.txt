@@ -1,0 +1,143 @@
+Git Hub (push / pull request trough command line)
+
+* GIT PUSH
+* Using Command line to PUSH to GitHub.
+* Using GitHub Desktop to PUSH to your local content to GitHub.
+
+* PULL Request
+* PULL Request through Command Line.
+* PULL Request through GitHub Desktop.
+
+You can easily follow along with all of the materials in the tutorial, even 
+if you are a beginner. However, if you don't have any concept about Git, then have 
+a look at Git Tutorial for Beginners: Connamd-Line Fundamentals and set up
+your environment by using GIT SETUP:The Definitive Guide.
+
+Git PUSH :
+
+The 'git push' command is used to transfer or push the commit, which is
+made on a local branch in your computer to a remote repository like GitHub.
+The command used for pushing to GitHub is given below.
+
+command => git push 'remote_name' 'branch_name'
+
+In this tutorial, you'll be looking two different ways to PUSH to GitHub
+
+------------------------------------------------------------------------
+		      GIT COMMANDS TO PUSH AND PULL :
+
+// Configure name and email id 
+
+1. git config --global user.name "Chetansoni123"
+
+2. git config --global user.email lalkasa09@gmail.com
+
+// to check whether name and mail id are added or not 
+
+1. git config --list
+
+// Check Your CWD 
+
+1. pwd
+
+// Make a folder
+
+1. mkdir git_demo
+
+// go to this folder
+
+1. cd git_demo
+
+// Let's create 1st repository
+
+1. mkdir FirstRepo
+
+// Go to firstrepo 
+
+1. cd FirstRepo
+
+// Create a Repository here
+
+1. git init
+
+// Create some files
+
+1. touch alpha.txt
+
+2. notepad alpha.txt
+
+// check status
+
+1. git status
+- It shows no file has commited yet (shows in red)
+
+// Now add the file
+
+1. git add alpha.txt ( for specific file )
+
+2. git add -A / git add . ( to add everything on the current directory)
+
+// Again check the status
+
+1. git status 
+- Now the file has been added, but not commits yet 
+- but now it shows in "Green Color"
+
+// Now commit the file
+
+1. git commit -m "beta gamma"
+
+//  Let's have look logs of all the files
+
+1. git log
+
+// Now, let's make one more commit
+
+1. touch beta.txt
+
+2. notepad beta.txt (inside file type - alpha gamma)
+
+// Let's make changes in the previous notepad file that we had
+
+1. notepad alpha.txt (add 'delta' also)
+
+// Now let's check the status of all the files
+
+1. git status
+
+- It shows both the files i. e. alpha.txt has been modified and beta.txt is 
+still untracked.
+
+// we again add these files
+
+1. git add .
+
+// commit again
+
+1. git commit -m "alpha gamma'
+
+// check status again
+
+1. git status
+
+// Now create a new repository in GitHub (let say 'FirstRepo')
+
+and copy this link from there - git remote add origin https://github.com/Chetansoni123/FirstRepo.git
+
+// Paste above link in gitbash terminal
+
+- it creates a remote name as origin
+
+// For gitpush we first need to execute git remote command
+
+1. git remote -v
+
+// Let's push our files to the git repository
+
+1. git push -u origin master
+
+-------------------------------------------------------------------------------------
+
+Le'ts make a folder named 'Git_Tutorial'. Inside that we have 2 files,  'Git_Push_Tutorial.txt' and
+'Git_Pull_Tutorial.txt'
+
