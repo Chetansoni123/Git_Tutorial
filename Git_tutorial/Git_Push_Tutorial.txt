@@ -141,3 +141,14 @@ and copy this link from there - git remote add origin https://github.com/Chetans
 Le'ts make a folder named 'Git_Tutorial'. Inside that we have 2 files,  'Git_Push_Tutorial.txt' and
 'Git_Pull_Tutorial.txt'
 
+1. git init 
+2. git add .
+3. git commit -m "git tutorial"
+
+Now, copy the HTTPs URL from the repository in which you want to push  which looks like:
+https://github.com/Chetansoni123/Git_Tutorial.git
+
+4. git remote add origin https://github.com/Chetansoni123/Git_Tutorial.git
+
+5. git push -u origin master
+
