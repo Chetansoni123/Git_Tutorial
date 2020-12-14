@@ -1,0 +1,64 @@
+Git push tutorial :
+
+Remote Repository -----> (Fetch)----> Origin/Master -------> Merge ----> Project
+
+This whole process is called Pull
+
+* Git pull is used to fetch and merge changes from the remote repository to the 
+local repository.
+
+* Git pull is a combination of two commands, git fetch followed by git merge. 
+
+git fetch : Git fetch command downloads content from the required remote repository.
+git merge : Git merge command combines multiple sequences of commits into a single branch.
+
+----------------------- Let's do this with commands ------------------
+
+1. mkdir git_back	# make a directory
+2. cd git_back		# go to in this directory
+3. mkdir Changes	# make a directory
+4. cd Changes		# go to this directory
+
+5. git init		# Initialize local git repository (.git folder created)
+
+Let's pull the directory 'Git_tutorial' from the 'Git_Tutorial' repository 
+
+* Before pull command, copy the HTTPS URL from the 'Git-Tutorial' repository
+which looks like - https://github.com/Chetansoni123/Git_Tutorial.git
+
+6. git pull https://github.com/Chetansoni123/Git_Tutorial.git
+
+Now, we got our 2 files i.e. 'Git_Push_tutorial.txt' and 'Git_Pull_tutorial.txt'.
+
+Let's make some changes or add some content in 'Git_Pull_tutorial.txt' file and 
+then we push back this file into the github(or 'Git-Tutorial folder) again.
+
+7. git add Git_tutorial/Git_Pull_Tutorial.txt
+
+- This commands adds this file 
+
+8- git status # check this file appears here
+
+9. git commit -m "git-pull"
+- Make commit of this file
+
+10. git status # check status again
+
+hence, changes are made now, we will push this 'Git_Pull_Tutorial.txt' file
+into the 'Git-Tutorial' repository.
+
+* Before push, copy HTTPs URL from this 'Git_Tutorial' repository which looks
+like : https://github.com/Chetansoni123/Git_Tutorial.git
+
+11. git remote add origin https://github.com/Chetansoni123/Git_Tutorial.git
+
+12. git remote -v 
+- You can see fetch and push commands in order.
+
+13. git push origin master
+
+Now, we can see our file 'Git_Pull_tutorial.txt' has been pushed into the 'Git-Tutorial'
+repository.
+
+
+
